@@ -1,0 +1,183 @@
+body {
+  text-align: center;
+  background-color: #fd2eb3;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #beebe9;
+  font-family: "Arvo", cursive;
+  text-shadow: 6px 0 #DA0463;
+
+}
+
+h4 {
+  font-size: 4.5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+.w {
+  background-image: url("tom1.png");
+}
+
+.a {
+  background-image: url("tom2.png");
+}
+
+.s {
+  background-image: url("tom3.png");
+}
+
+.d {
+  background-image: url("tom4.png");
+}
+
+.j {
+  background-image: url("snare.png");
+}
+
+.k {
+  background-image: url("crash.png");
+}
+
+.l {
+  background-image: url("kick.png");
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+.calendar__body {
+  background-color: #333;
+  color: #aaa;
+  font-family: 'Josefin Sans';
+}
+
+.calendar {
+  width: 350px;
+  margin: 50px auto 0;
+}
+
+.calendar__month {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+}
+
+.cal-month__previous,
+.cal-month__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+
+  &:hover {
+    background-color: #42A5F5;
+    box-shadow: 0 5px 5px -5px rgba(0,0,0,0.75);
+    border-radius: 50%;
+    font-weight: 800;
+    color: #111;
+  }
+}
+
+.cal-month__next {
+  right: 0;
+}
+
+.cal-month__current {
+  text-align: center;
+  color: #e1e1e1;
+}
+
+.cal-head__day,
+.cal-body__day {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.cal-body__week,
+.calendar__head {
+  display: block;
+  height: 50px;
+  width: 350px;
+}
+
+.calendar__head {
+  line-height: 50px;
+  position: relative;
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #90CAF9;
+  }
+}
+
+.cal-body__day {
+  color: #777;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cal-day__month--current {
+  color: #e1e1e1;
+}
+
+.cal-day__day--today {
+  font-weight: 800;
+  color: #2196f3;
+}
+
+.cal-day__day--selected {
+  background-color: #2196f3;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, .75);
+  border-radius: 50%;
+  color: #111;
+}
